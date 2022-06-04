@@ -20,7 +20,8 @@ RUN apk --update-cache add ca-certificates && \
 
 RUN apk add --update-cache \
     php8 \
-    php-fpm
+    php-fpm \
+    php-xdebug
 
 EXPOSE 80
 

@@ -19,5 +19,6 @@ services:
       - ./config/php/php.ini:/etc/php8/php.ini
       - ./config/php/php-fpm.conf:/etc/php8/php-fpm.conf
       - ./config/php/php-fpm.d/www.conf:/etc/php8/php-fpm.d/www.conf
+      - ./config/php/conf.d/00_xdebug.ini:/etc/php8/conf.d/00_xdebug.ini
     extra_hosts:
       - "host.docker.internal:host-gateway"
